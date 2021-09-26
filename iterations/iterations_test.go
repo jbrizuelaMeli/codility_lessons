@@ -3,7 +3,7 @@ package iterations
 import (
 	"testing"
 
-	"github.com/magiconair/properties/assert"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSolution(t *testing.T) {
