@@ -13,7 +13,7 @@ func (cr *CyclicRotation) Solution(a []int, k int) []int {
 		n := idx + k
 		//ex: a[1,2,3,4,5] k = 2 -> a[4,5,1,2,3]
 		// a[idx] -> a[idx + k] only if (idx + k < len(a) - 1) else a[idx] -> a[(idx + k)%l]
-		// (idx + k)%l = [0,...,l]
+		// (idx + k)%l value between [0,...,l]
 		b[n%l] = val
 	}
 	return b
