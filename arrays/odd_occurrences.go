@@ -17,6 +17,7 @@ func (o *OddOccurrences) Solution(a []int) int {
 		occurrences[val]++
 	}
 	for idx, c := range occurrences {
+		//if the number of occurrences is odd it means that it contains the unpaired value
 		if c%2 != 0 {
 			return idx
 		}
