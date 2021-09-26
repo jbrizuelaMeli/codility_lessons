@@ -7,7 +7,6 @@ import (
 //Given a positive integer N, returns the length of its longest binary gap.
 //The function should return 0 if N doesn't contain a binary gap.
 func Solution(n int) int {
-	//Discard even numbers or 1
 	if n == 1 {
 		return 0
 	}
