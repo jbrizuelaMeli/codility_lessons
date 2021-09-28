@@ -12,22 +12,19 @@ func (te TapeEquilibrium) Solution(a []int) int {
 	}
 	var a0, a1, minDiff int
 	idxP := 0
-	for p := range a {
-		if p == l-1 {
-			break
-		}
-		for i := idxP; i < p+1; i++ {
+	for p := 1; p < l; p++ {
+		for i := idxP; i < p; i++ {
 			a0 += a[i]
-			if p > 0 {
+			if p > 1 {
 				a1 -= a[i]
 			}
 			idxP++
 		}
-		for j := idxP; j < l && p == 0; j++ {
+		for j := idxP; j < l && p == 1; j++ {
 			a1 += a[j]
 		}
 		diff := abs(a0 - a1)
-		if diff <= minDiff || p == 0 {
+		if diff <= minDiff || p == 1 {
 			minDiff = diff
 		}
 	}
