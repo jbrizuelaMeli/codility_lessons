@@ -4,9 +4,11 @@ import (
 	"strconv"
 )
 
+type BinaryGap struct{}
+
 //Given a positive integer N, returns the length of its longest binary gap.
 //The function should return 0 if N doesn't contain a binary gap.
-func Solution(n int) int {
+func (b BinaryGap) Solution(n int) int {
 	if n == 1 {
 		return 0
 	}

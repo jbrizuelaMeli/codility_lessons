@@ -7,29 +7,33 @@ import (
 )
 
 func TestSolution(t *testing.T) {
+	bg := &BinaryGap{}
 	n := 328
 
-	res := Solution(n)
+	res := bg.Solution(n)
 	assert.Equal(t, 2, res)
 }
 
 func TestSolution2(t *testing.T) {
+	bg := &BinaryGap{}
 	n := 123443
 
-	res := Solution(n)
+	res := bg.Solution(n)
 	assert.Equal(t, 3, res)
 }
 
 func TestSolution3(t *testing.T) {
+	bg := &BinaryGap{}
 	n := 345365628
 
-	res := Solution(n)
+	res := bg.Solution(n)
 	assert.Equal(t, 3, res)
 }
 
 func TestSolution4(t *testing.T) {
+	bg := &BinaryGap{}
 	n := 3099887828
 
-	res := Solution(n)
+	res := bg.Solution(n)
 	assert.Equal(t, 3, res)
 }
