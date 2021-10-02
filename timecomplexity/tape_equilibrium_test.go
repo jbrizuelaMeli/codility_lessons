@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestSolution(t *testing.T) {
+func TestTapeEquilibrium_Solution(t *testing.T) {
 	te := &TapeEquilibrium{}
 
 	a := []int{3, 1, 2, 4, 3}
